@@ -1,3 +1,2 @@
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'w0rp/ale'
-Plugin 'alvan/vim-closetag'
