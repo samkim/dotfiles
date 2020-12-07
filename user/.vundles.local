@@ -1,2 +1,6 @@
 Plugin 'wesQ3/vim-windowswap'
-Plugin 'w0rp/ale'
+Plugin 'janko/vim-test'
+Plugin 'skywind3000/asyncrun.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'junegunn/fzf.vim'
+Plugin 'dense-analysis/ale'
