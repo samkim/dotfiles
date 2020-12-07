@@ -26,6 +26,8 @@ nnoremap <leader>tv :TestVisit<CR>
 set luadll=/usr/local/Cellar/lua/5.3.5_1/lib/liblua5.3.dylib
 
 
+let g:gundo_prefer_python3 = 1
+
 " ALE Plugin
 nmap <silent> <leader>aj :ALENext<cr>
 nmap <silent> <leader>ak :ALEPrevious<cr>
