@@ -1,5 +1,62 @@
-
 inoremap jk <esc>
 inoremap kj <esc>
 
-set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
+set guifont=Hack-Regular:h12
+set foldnestmax=5
+nnoremap <leader>cb :bp <bar> bd! #<cr>
+
+" vim-test
+set shell=zsh
+let test#ruby#use_binstubs = 0
+let test#strategy = "asyncrun"
+" open quickfix by default
+let g:asyncrun_open = 20
+" let g:test#custom_strategies = {
+"   \ 'nearest': 'asyncrun',
+"   \ 'file':    'asyncrun',
+"   \ 'suite':   'asyncrun',
+"   \}
+nnoremap <leader>tn :TestNearest<CR>
+nnoremap <leader>tf :TestFile<CR>
+nnoremap <leader>ts :TestSuite<CR>
+nnoremap <leader>tl :TestLast<CR>
+nnoremap <leader>tv :TestVisit<CR>
+
+" neocomplete
+set luadll=/usr/local/Cellar/lua/5.3.5_1/lib/liblua5.3.dylib
+
+" ALE
+nnoremap <leader>an :ALENext<CR>
+nnoremap <leader>ap :ALEPrevious<CR>
+nnoremap <leader>af :ALEFix<CR>
+nnoremap <leader>al :ALELint<CR>
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+
+let g:ale_fixers = {
+      \   'ruby': [
+      \       'rubocop',
+      \   ],
+      \   'typescriptreact': [
+      \       'prettier'
+      \   ],
+      \   'typescript': [
+      \       'prettier'
+      \   ],
+      \   'javascript': [
+      \       'prettier'
+      \   ],
+      \   'javascriptreact': [
+      \       'prettier'
+      \   ],
+      \}
+let g:ale_linters = {
+      \   'ruby': [
+      \       'rubocop',
+      \       'sorbet',
+      \   ],
+      \   'javascript': ['eslint'],
+      \}
