@@ -1,3 +1,9 @@
 [user]
   name = Sam Kim
   email = samkim@gmail.com
+
+[alias]
+  ap = add --patch
+  ai = add --interactive
+  wip = commit -n -m wip
+  bl = branch --sort=-committerdate
