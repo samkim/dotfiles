@@ -8,6 +8,8 @@ brew 'git'
 brew 'lua'
 brew 'luajit'
 brew 'macvim', args: ['with-lua', 'with-luajit', 'with-override-system-vim']
+brew 'delta'
+brew 'bat'
 cask 'iterm2'
 cask 'clipy'
 cask 'flux'

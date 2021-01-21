@@ -7,3 +7,12 @@
   ai = add --interactive
   wip = commit -n -m wip
   bl = branch --sort=-committerdate
+
+[core]
+    pager = delta
+
+[delta]
+  syntax-theme = Solarized (dark)
+
+[interactive]
+    diffFilter = delta --color-only
