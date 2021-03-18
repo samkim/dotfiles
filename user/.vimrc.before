@@ -2,7 +2,6 @@ let g:ale_completion_enabled = 1
 
 set rtp+=/usr/local/opt/fzf
 
-let g:loaded_ctrlp = 1
 nnoremap <silent> ,b :Buffers<cr>
 nnoremap <silent> ,tt :FZF<cr>
 nnoremap <silent> ,ll :Lines<cr>

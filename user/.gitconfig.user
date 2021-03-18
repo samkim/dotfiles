@@ -7,9 +7,10 @@
   ai = add --interactive
   wip = commit -n -m wip
   bl = branch --sort=-committerdate
+  gp = pull --rebase
 
 [core]
-    pager = delta
+  pager = delta
 
 [delta]
   syntax-theme = Solarized (dark)
