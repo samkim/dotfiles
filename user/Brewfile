@@ -10,6 +10,7 @@ brew 'macvim', args: ['with-lua', 'with-luajit', 'with-override-system-vim']
 brew 'git-delta'
 brew 'bat'
 brew 'fzf'
+brew 'tophat/bar/yvm', args: ['--without-node']
 cask 'clipy'
 cask 'font-hack'
 cask 'font-inconsolata'

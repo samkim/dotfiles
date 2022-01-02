@@ -1,9 +1,18 @@
 inoremap jk <esc>
 inoremap kj <esc>
+set colorcolumn=125
 
-set guifont=Hack-Regular:h12
+" set guifont=Hack:h12
+set guifont=Mensch-RegularForPowerline:h12
 set foldnestmax=5
 nnoremap <leader>cb :bp <bar> bd! #<cr>
+
+" fzf
+nnoremap <silent> ,c :Commands<cr>
+nnoremap <silent> ,b :Buffers<cr>
+nnoremap <silent> ,tt :FZF<cr>
+nnoremap <silent> ,ll :Lines<cr>
+nnoremap <silent> ,l :BLines<cr>
 
 " vim-test
 set shell=zsh
@@ -40,17 +49,26 @@ let g:ale_lint_on_enter = 0
 let g:ale_linters = {
 \   'css': ['prettier'],
 \   'javascript': ['prettier-eslint'],
+\   'javascriptreact': ['prettier-eslint'],
+\   'typescript': ['prettier-eslint'],
+\   'typescriptreact': ['prettier-eslint'],
 \   'json': ['prettier'],
+\   'python': ['pyflakes'],
 \   'ruby': ['rubocop'],
 \   'scss': ['prettier'],
 \   'vue': ['prettier'],
+\   'go': ['gopls'],
 \}
 
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'css': ['prettier'],
 \   'javascript': ['prettier-eslint'],
+\   'javascriptreact': ['prettier-eslint'],
+\   'typescript': ['prettier-eslint'],
+\   'typescriptreact': ['prettier-eslint'],
 \   'json': ['prettier'],
+\   'python': ['isort', 'black'],
 \   'ruby': ['rubocop'],
 \   'scss': ['prettier'],
 \   'vue': ['prettier'],
